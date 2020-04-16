@@ -24,6 +24,11 @@ public class Book {
     public Book() {
     }
 
+    public Book(String title, String isbn) {
+        this.title = title;
+        this.isbn = isbn;
+    }
+
     public Book(String title, String isbn, Set<Author> authors) {
         this.title = title;
         this.isbn = isbn;
