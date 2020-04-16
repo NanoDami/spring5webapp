@@ -32,6 +32,8 @@ public class BootStrapData implements CommandLineRunner {
         Book lotr = new Book("Lord of the Rings", "512344231");
         tolkien.getBooks().add(lotr);
         lotr.getAuthors().add(tolkien);
+        authorRepository.save(tolkien);
+        bookRepository.save(lotr);
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of books: " + bookRepository.count());
